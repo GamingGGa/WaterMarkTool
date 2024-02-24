@@ -1,0 +1,6 @@
+README.md
+setup.py
+WaterMarkTool.egg-info/PKG-INFO
+WaterMarkTool.egg-info/SOURCES.txt
+WaterMarkTool.egg-info/dependency_links.txt
+WaterMarkTool.egg-info/top_level.txt
