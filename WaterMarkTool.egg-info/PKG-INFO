@@ -1,12 +1,44 @@
-Metadata-Version: 1.2
+Metadata-Version: 2.1
 Name: WaterMarkTool
-Version: 0.0.1
+Version: 0.0.3
 Summary: A little tool to add water mark on various pictures
-Home-page: UNKNOWN
-License: UNKNOWN
-Description: UNKNOWN
+Home-page: https://pypi.org/project/WaterMarkTool/
+License: MIT
+Download-URL: https://files.pythonhosted.org/packages/f8/78/62f49f1724ecd30cd4f998d5f9c2a4e041a56cb4dc7adaec21df502b7b95/WaterMarkTool-0.0.2.tar.gz
+Description: # WaterMarkTool
+        A little tool to add water mark on various pictures
+        
+        
+        ```python
+        def paste_image_on_another(
+            top_left_pos,
+            bg_img_path=None,
+            bg_img=None,
+            paste_img_path=None,
+            paste_img=None,
+            save_as=None,
+            transparency = 255,
+        ):
+            bg_img = Image.open(bg_img_path) if bg_img_path != None else bg_img
+            paste_img = Image.open(paste_img_path) if paste_img_path != None else paste_img
+            
+            if bg_img == None or paste_img == None:
+                raise Exception("bg_img or paste_img not specified")
+            
+            bg_img = bg_img.convert('RGB')
+            paste_img = paste_img.convert('RGBA')
+            paste_img.putalpha(transparency)
+            bg_img.paste(paste_img, top_left_pos, mask=paste_img)
+        
+            if save_as != None:
+                bg_img.save(save_as)
+        
+            return bg_img
+        ```
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
+Description-Content-Type: text/markdown
