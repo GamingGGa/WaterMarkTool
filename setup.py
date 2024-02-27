@@ -2,7 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
 name="WaterMarkTool",
-version="0.0.5",
+author='GamingGGa',
+author_email='GabrielGaming1443@gmail.com',
+maintainer='GamingGGa',
+version="0.0.7",
 description="A little tool to add water mark on various pictures",
 long_description=open('README.md').read(),
 long_description_content_type='text/markdown',
