@@ -1,13 +1,12 @@
 Metadata-Version: 2.1
 Name: WaterMarkTool
-Version: 0.0.7
+Version: 0.0.8
 Summary: A little tool to add water mark on various pictures
-Home-page: https://pypi.org/project/WaterMarkTool/
+Home-page: https://github.com/GamingGGa/WaterMarkTool
 Author: GamingGGa
 Author-email: GabrielGaming1443@gmail.com
-Maintainer: GamingGGa
 License: MIT
-Download-URL: https://files.pythonhosted.org/packages/f8/78/62f49f1724ecd30cd4f998d5f9c2a4e041a56cb4dc7adaec21df502b7b95/WaterMarkTool-0.0.2.tar.gz
+Project-URL: Source, https://github.com/GamingGGa/WaterMarkTool
 Description: # WaterMarkTool
         A little tool to add water mark on various pictures
         
@@ -40,8 +39,8 @@ Description: # WaterMarkTool
         ```
         
 Platform: UNKNOWN
-Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown

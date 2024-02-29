@@ -1,25 +1,24 @@
 from setuptools import setup, find_packages
 
 setup(
-name="WaterMarkTool",
-author='GamingGGa',
-author_email='GabrielGaming1443@gmail.com',
-maintainer='GamingGGa',
-version="0.0.7",
-description="A little tool to add water mark on various pictures",
-long_description=open('README.md').read(),
-long_description_content_type='text/markdown',
-packages=find_packages(),
-install_requires=[
-    'pillow <= 10.2.0',
-],
-url="https://pypi.org/project/WaterMarkTool/",
-download_url="https://files.pythonhosted.org/packages/f8/78/62f49f1724ecd30cd4f998d5f9c2a4e041a56cb4dc7adaec21df502b7b95/WaterMarkTool-0.0.2.tar.gz",
-license="MIT",
-classifiers=[
-"Programming Language :: Python :: 3",
-"License :: OSI Approved :: MIT License",
-"Operating System :: OS Independent",
-],
-python_requires=">=3.6",
+    name="WaterMarkTool",
+    version="0.0.8",
+    packages=find_packages(),
+    install_requires=["solana <= 0.30.2"],
+    author='GamingGGa',
+    author_email='GabrielGaming1443@gmail.com',
+    description="A little tool to add water mark on various pictures",
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url="https://github.com/GamingGGa/WaterMarkTool",
+    project_urls={
+        'Source': 'https://github.com/GamingGGa/WaterMarkTool',
+    },
+    license='MIT',
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Operating System :: OS Independent',
+    ],
+    python_requires=">=3.6",
 )
